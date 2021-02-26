@@ -1,17 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "g0hCYRGn5zTZM5IdwcVFELtEd1X3ZO36TEu9Mlw99lAFvh9UaqCZbCOhtXpGm97PdzsOMkSWVFnRCDAE33XCmA==",
+  "dgSpecHash": "sovYimcE+5rT67O33JqGOoIGYcI2FiEgs5qT+G6Mgeo9q8I7G1zyuWMLq54eawjNdwSL+LtuCYWSQfJA3OEWug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1933686\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
+  "projectFilePath": "C:\\Users\\r.taccoen\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\1933686\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
-    "C:\\Users\\1933686\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\1933686\\.nuget\\packages\\prism.unity\\8.0.0.1909\\prism.unity.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\1933686\\.nuget\\packages\\prism.wpf\\8.0.0.1909\\prism.wpf.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\1933686\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\1933686\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
-    "C:\\Users\\1933686\\.nuget\\packages\\unity.abstractions\\5.11.6\\unity.abstractions.5.11.6.nupkg.sha512",
-    "C:\\Users\\1933686\\.nuget\\packages\\unity.container\\5.11.8\\unity.container.5.11.8.nupkg.sha512"
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\fody\\6.3.0\\fody.6.3.0.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\google.apis\\1.50.0\\google.apis.1.50.0.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\google.apis.auth\\1.50.0\\google.apis.auth.1.50.0.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\google.apis.core\\1.50.0\\google.apis.core.1.50.0.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\google.apis.youtube.v3\\1.50.0.2238\\google.apis.youtube.v3.1.50.0.2238.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\prism.unity\\8.0.0.1909\\prism.unity.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\prism.wpf\\8.0.0.1909\\prism.wpf.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\propertychanged.fody\\3.3.2\\propertychanged.fody.3.3.2.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\unity.abstractions\\5.11.6\\unity.abstractions.5.11.6.nupkg.sha512",
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\unity.container\\5.11.8\\unity.container.5.11.8.nupkg.sha512"
   ],
   "logs": []
 }

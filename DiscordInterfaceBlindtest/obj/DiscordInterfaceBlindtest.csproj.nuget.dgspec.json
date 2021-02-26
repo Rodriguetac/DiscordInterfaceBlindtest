@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1933686\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj": {}
+    "C:\\Users\\r.taccoen\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1933686\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj": {
+    "C:\\Users\\r.taccoen\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1933686\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
+        "projectUniqueName": "C:\\Users\\r.taccoen\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
         "projectName": "DiscordInterfaceBlindtest",
-        "projectPath": "C:\\Users\\1933686\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
-        "packagesPath": "C:\\Users\\1933686\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1933686\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\obj\\",
+        "projectPath": "C:\\Users\\r.taccoen\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
+        "packagesPath": "C:\\Users\\r.taccoen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\r.taccoen\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\1933686\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\r.taccoen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -30,7 +30,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,11 +41,22 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Google.Apis.YouTube.v3": {
+              "target": "Package",
+              "version": "[1.50.0.2238, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
             "Prism.Unity": {
               "target": "Package",
               "version": "[8.0.0.1909, )"
+            },
+            "PropertyChanged.Fody": {
+              "target": "Package",
+              "version": "[3.3.2, )"
             }
           },
           "imports": [
@@ -67,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

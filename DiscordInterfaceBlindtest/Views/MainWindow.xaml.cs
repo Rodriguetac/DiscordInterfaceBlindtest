@@ -10,6 +10,8 @@ namespace DiscordInterfaceBlindtest.Views
         public MainWindow()
         {
             InitializeComponent();
+
+            this.MainFrame.Content = new FirstView();
         }
     }
 }

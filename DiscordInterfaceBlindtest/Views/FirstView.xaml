@@ -1,0 +1,53 @@
+﻿<Page x:Class="DiscordInterfaceBlindtest.Views.FirstView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DiscordInterfaceBlindtest.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FirstView">
+
+    <Grid Background="Blue">
+        <StackPanel Background="Red"
+                    Height="450"
+                    Width="800"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <TextBlock Text="Bonjour"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Background="Yellow"/>
+            <TextBox x:Name="TextBoxPlaylistName"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top"
+                 Margin="0,20,0,0"
+                 Width="100"/>
+            <Button Content="Search Videos"
+                    Command="{Binding SearchVideosCommand}"
+                    CommandParameter="{Binding ElementName=TextBoxPlaylistName, Path=Text}"/>
+            <Button Content="{Binding TextAddButton}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Visibility="{Binding VisibilityAddButton}"/>
+            <ListView x:Name="testList" ItemsSource="{Binding ListVideo}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Text="{Binding}" Grid.Column="0"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackPanel>
+    </Grid>
+</Page>

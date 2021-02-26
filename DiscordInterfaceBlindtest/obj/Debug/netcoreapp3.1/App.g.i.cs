@@ -53,7 +53,7 @@ namespace DiscordInterfaceBlindtest {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.0.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "4.8.1.0")]
         public static void Main() {
             DiscordInterfaceBlindtest.App app = new DiscordInterfaceBlindtest.App();
             app.Run();

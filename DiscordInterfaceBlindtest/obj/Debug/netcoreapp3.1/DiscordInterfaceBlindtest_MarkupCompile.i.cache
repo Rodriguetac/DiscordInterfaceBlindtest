@@ -1,20 +1,20 @@
 ﻿DiscordInterfaceBlindtest
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\1933686\Documents\Code\DiscordInterfaceBlindtest\DiscordInterfaceBlindtest\obj\Debug\netcoreapp3.1\
+C:\Users\r.taccoen\Documents\Code\DiscordInterfaceBlindtest\DiscordInterfaceBlindtest\obj\Debug\netcoreapp3.1\
 DiscordInterfaceBlindtest
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\1933686\Documents\Code\DiscordInterfaceBlindtest\DiscordInterfaceBlindtest\App.xaml
-11892971807
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
+C:\Users\r.taccoen\Documents\Code\DiscordInterfaceBlindtest\DiscordInterfaceBlindtest\App.xaml
+2-114080208
 
-51583024512
-198689550648
-Views\MainWindow.xaml;
+9-689617607
+2051250618713
+Views\FirstView.xaml;Views\MainWindow.xaml;
 
 False
 

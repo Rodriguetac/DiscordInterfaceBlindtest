@@ -2,6 +2,64 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Fody/6.3.0": {
+        "type": "package",
+        "build": {
+          "build/Fody.targets": {}
+        }
+      },
+      "Google.Apis/1.50.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis.Core": "1.50.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.50.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.50.0",
+          "Google.Apis.Core": "1.50.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.50.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        }
+      },
+      "Google.Apis.YouTube.v3/1.50.0.2238": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.50.0",
+          "Google.Apis.Auth": "1.50.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.YouTube.v3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.YouTube.v3.dll": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.19": {
         "type": "package",
         "compile": {
@@ -13,6 +71,15 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
       },
       "Prism.Core/8.0.0.1909": {
         "type": "package",
@@ -54,6 +121,21 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "PropertyChanged.Fody/3.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Fody": "6.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/PropertyChanged.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/PropertyChanged.dll": {}
+        },
+        "build": {
+          "build/PropertyChanged.Fody.props": {}
+        }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.2": {
         "type": "package",
@@ -101,6 +183,136 @@
     }
   },
   "libraries": {
+    "Fody/6.3.0": {
+      "sha512": "kBGlW/vBUvBSyCvFI3YICNl77gjUr0KMROlBTeBPN/+J3JMU57w1dpXPwjmU4ahdBTYLomzgxKLaJ3jVNuXuQg==",
+      "type": "package",
+      "path": "fody/6.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "build/Fody.targets",
+        "fody.6.3.0.nupkg.sha512",
+        "fody.nuspec",
+        "netclassictask/Fody.dll",
+        "netclassictask/FodyCommon.dll",
+        "netclassictask/FodyHelpers.dll",
+        "netclassictask/FodyIsolated.dll",
+        "netclassictask/Mono.Cecil.Pdb.dll",
+        "netclassictask/Mono.Cecil.Pdb.pdb",
+        "netclassictask/Mono.Cecil.Rocks.dll",
+        "netclassictask/Mono.Cecil.Rocks.pdb",
+        "netclassictask/Mono.Cecil.dll",
+        "netclassictask/Mono.Cecil.pdb",
+        "netstandardtask/Fody.dll",
+        "netstandardtask/FodyCommon.dll",
+        "netstandardtask/FodyHelpers.dll",
+        "netstandardtask/FodyIsolated.dll",
+        "netstandardtask/Mono.Cecil.Pdb.dll",
+        "netstandardtask/Mono.Cecil.Pdb.pdb",
+        "netstandardtask/Mono.Cecil.Rocks.dll",
+        "netstandardtask/Mono.Cecil.Rocks.pdb",
+        "netstandardtask/Mono.Cecil.dll",
+        "netstandardtask/Mono.Cecil.pdb"
+      ]
+    },
+    "Google.Apis/1.50.0": {
+      "sha512": "qV0wmPVM03YU2dEi8uir+9Ee8MwoH8ELwMVbDX3fuf2NUbweY43fAQ7P20xbq/4nhgOP/maWzrjNlw8WkD4hyw==",
+      "type": "package",
+      "path": "google.apis/1.50.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.1.50.0.nupkg.sha512",
+        "google.apis.nuspec",
+        "lib/net45/Google.Apis.PlatformServices.dll",
+        "lib/net45/Google.Apis.dll",
+        "lib/net45/Google.Apis.pdb",
+        "lib/net45/Google.Apis.xml",
+        "lib/netstandard1.3/Google.Apis.dll",
+        "lib/netstandard1.3/Google.Apis.pdb",
+        "lib/netstandard1.3/Google.Apis.xml",
+        "lib/netstandard2.0/Google.Apis.dll",
+        "lib/netstandard2.0/Google.Apis.pdb",
+        "lib/netstandard2.0/Google.Apis.xml"
+      ]
+    },
+    "Google.Apis.Auth/1.50.0": {
+      "sha512": "y6hqXcDzTA5tj3Qasr97anpIc+gGJC9QlWJnGSRvp7o4/c4b4Bd5tBgqyJKhgfBMo+HugXGcYh17Kvm5SB3v6g==",
+      "type": "package",
+      "path": "google.apis.auth/1.50.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.auth.1.50.0.nupkg.sha512",
+        "google.apis.auth.nuspec",
+        "lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "lib/net45/Google.Apis.Auth.dll",
+        "lib/net45/Google.Apis.Auth.pdb",
+        "lib/net45/Google.Apis.Auth.xml",
+        "lib/netstandard1.3/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.pdb",
+        "lib/netstandard1.3/Google.Apis.Auth.xml",
+        "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.pdb",
+        "lib/netstandard2.0/Google.Apis.Auth.xml"
+      ]
+    },
+    "Google.Apis.Core/1.50.0": {
+      "sha512": "E/ioNStr2z0LXXAaGR7bnbRQqozjFb12mi5zs/Bm4c2ZH9uoKOxz9FbQkNRq4R3yHif5gxt3nh8Ei7g9qRiYxQ==",
+      "type": "package",
+      "path": "google.apis.core/1.50.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.core.1.50.0.nupkg.sha512",
+        "google.apis.core.nuspec",
+        "lib/net45/Google.Apis.Core.dll",
+        "lib/net45/Google.Apis.Core.pdb",
+        "lib/net45/Google.Apis.Core.xml",
+        "lib/netstandard1.3/Google.Apis.Core.dll",
+        "lib/netstandard1.3/Google.Apis.Core.pdb",
+        "lib/netstandard1.3/Google.Apis.Core.xml",
+        "lib/netstandard2.0/Google.Apis.Core.dll",
+        "lib/netstandard2.0/Google.Apis.Core.pdb",
+        "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
+    "Google.Apis.YouTube.v3/1.50.0.2238": {
+      "sha512": "ikvbIDus+/wK4dWF0Pet1ABmklOVj33JIcBa5+RUmoOMaqb9GbDvJL384uiI7/a04KAGUmhxjdYd5TJu1HYVTg==",
+      "type": "package",
+      "path": "google.apis.youtube.v3/1.50.0.2238",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "google.apis.youtube.v3.1.50.0.2238.nupkg.sha512",
+        "google.apis.youtube.v3.nuspec",
+        "lib/net40/Google.Apis.YouTube.v3.dll",
+        "lib/net40/Google.Apis.YouTube.v3.pdb",
+        "lib/net40/Google.Apis.YouTube.v3.xml",
+        "lib/net45/Google.Apis.YouTube.v3.dll",
+        "lib/net45/Google.Apis.YouTube.v3.pdb",
+        "lib/net45/Google.Apis.YouTube.v3.xml",
+        "lib/netstandard1.0/Google.Apis.YouTube.v3.dll",
+        "lib/netstandard1.0/Google.Apis.YouTube.v3.pdb",
+        "lib/netstandard1.0/Google.Apis.YouTube.v3.xml",
+        "lib/netstandard1.3/Google.Apis.YouTube.v3.dll",
+        "lib/netstandard1.3/Google.Apis.YouTube.v3.pdb",
+        "lib/netstandard1.3/Google.Apis.YouTube.v3.xml",
+        "lib/netstandard2.0/Google.Apis.YouTube.v3.dll",
+        "lib/netstandard2.0/Google.Apis.YouTube.v3.pdb",
+        "lib/netstandard2.0/Google.Apis.YouTube.v3.xml"
+      ]
+    },
     "Microsoft.Xaml.Behaviors.Wpf/1.1.19": {
       "sha512": "5sPWkbqImc2t1aQwIfJcKsUo7tOg1Tr8+6xVzZJB56Nzt4u9NlpcLofgdX/aRYpPKdWDA3U23Akw1KQzU5e82g==",
       "type": "package",
@@ -120,6 +332,37 @@
         "microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
         "microsoft.xaml.behaviors.wpf.nuspec",
         "tools/Install.ps1"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "Prism.Core/8.0.0.1909": {
@@ -192,6 +435,26 @@
         "prism-logo.png",
         "prism.wpf.8.0.0.1909.nupkg.sha512",
         "prism.wpf.nuspec"
+      ]
+    },
+    "PropertyChanged.Fody/3.3.2": {
+      "sha512": "t3MPRqVzMnhnPrxmoofPyOPdWgCsw92HK2bL0aShbeZ3CksRG+HGvLGsgPX9ihXDC33V+g5CW/gA6ehqD4lWiA==",
+      "type": "package",
+      "path": "propertychanged.fody/3.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/PropertyChanged.Fody.props",
+        "lib/net40/PropertyChanged.dll",
+        "lib/net40/PropertyChanged.xml",
+        "lib/netstandard1.0/PropertyChanged.dll",
+        "lib/netstandard1.0/PropertyChanged.xml",
+        "lib/netstandard2.0/PropertyChanged.dll",
+        "lib/netstandard2.0/PropertyChanged.xml",
+        "propertychanged.fody.3.3.2.nupkg.sha512",
+        "propertychanged.fody.nuspec",
+        "weaver/PropertyChanged.Fody.dll",
+        "weaver/PropertyChanged.Fody.xcf"
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.5.2": {
@@ -319,27 +582,30 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Prism.Unity >= 8.0.0.1909"
+      "Google.Apis.YouTube.v3 >= 1.50.0.2238",
+      "Newtonsoft.Json >= 12.0.3",
+      "Prism.Unity >= 8.0.0.1909",
+      "PropertyChanged.Fody >= 3.3.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\1933686\\.nuget\\packages\\": {},
+    "C:\\Users\\r.taccoen\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1933686\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
+      "projectUniqueName": "C:\\Users\\r.taccoen\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
       "projectName": "DiscordInterfaceBlindtest",
-      "projectPath": "C:\\Users\\1933686\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
-      "packagesPath": "C:\\Users\\1933686\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1933686\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\obj\\",
+      "projectPath": "C:\\Users\\r.taccoen\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest.csproj",
+      "packagesPath": "C:\\Users\\r.taccoen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\r.taccoen\\Documents\\Code\\DiscordInterfaceBlindtest\\DiscordInterfaceBlindtest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\1933686\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\r.taccoen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -352,7 +618,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -364,11 +629,22 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Google.Apis.YouTube.v3": {
+            "target": "Package",
+            "version": "[1.50.0.2238, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          },
           "Prism.Unity": {
             "target": "Package",
             "version": "[8.0.0.1909, )"
+          },
+          "PropertyChanged.Fody": {
+            "target": "Package",
+            "version": "[3.3.2, )"
           }
         },
         "imports": [
@@ -389,7 +665,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
